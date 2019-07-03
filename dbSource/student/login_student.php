@@ -1,4 +1,7 @@
-
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,7 +185,7 @@ if(isset($_POST['bsubmit']))
 
         if($count > 0){
             $_SESSION['username'] = $username;
-            header('Location: registration.php');
+            header('Location: myIssuedBooks.php');
         }else{
            ?>
                                 <h6 style="background-color: #FFC312">Invalid Email or Password</h6>
@@ -201,7 +204,7 @@ if(isset($_POST['bsubmit']))
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="registration.php">Sign Up</a>
+                                    Don't have an account?<a href="registration.php">Sign Up</a>
 				</div>
 				<div class="d-flex justify-content-center">
 					<a href="#">Forgot your password?</a>
