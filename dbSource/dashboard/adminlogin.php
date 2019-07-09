@@ -151,6 +151,7 @@ margin-left: 4px;
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
+                                <br>
 					<div class="form-group">
                                             <button type="submit" class="btn btn-warning" name="bsubmit">Submit</button>
 					</div>
@@ -183,7 +184,7 @@ if(isset($_POST['bsubmit']))
 
         if($count > 0){
             $_SESSION['username'] = $username;
-            header('Location: dashboard.php');
+            header('Location: dashboard.html');
         }else{
            ?>
                                 <h6 style="background-color: #FFC312">Invalid Email or Password</h6>
@@ -201,18 +202,19 @@ if(isset($_POST['bsubmit']))
 </form>
 			</div>
 			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
+				
+                            <div class="d-flex justify-content-center links">
+                                Want to Go Back to HomePage?<a href="../home.html">Click Here</a>
 				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
+                            <div class="d-flex justify-content-center links">
+                                Are you a Student?<a href="../student/login.php">Click Me</a>
 				</div>
+				
 			</div>
 		</div>
 	</div>
 </div>
        
- 
                    
                 
 

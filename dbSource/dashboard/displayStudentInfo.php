@@ -4,31 +4,17 @@
  ?>
 
         <!-- page content area main -->
-        <div class="right_col" role="main">
-            <div class="">
-                <div class="page-title">
-                    <div class="title_left">
-                        <h3></h3>
-                    </div>
-
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
 
                 <div class="clearfix"></div>
                 <div class="row" style="min-height:500px">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <center><h2>Registered Students Details</h2></center>
+                               <br>
+
+<center><h1 style="background-color: #0c5460; padding: 10px;width: 45%;border: 1px groove #000;color: #fff">Registered Student Details</h1></center>
+
 
                                 <div class="clearfix"></div>
                             </div>
@@ -77,8 +63,7 @@
                                                            
                                                            echo "<th>" ;echo "RollNo" ;echo "</th>";  
                                                            echo "<th>" ;echo "Status" ;echo "</th>"; 
-                                                              echo "<th>" ;echo "Approve" ;echo "</th>"; 
-                                                                 echo "<th>" ;echo "Not Approve" ;echo "</th>"; 
+                                                              
                                                                echo"</tr>";
                                                           while($row1= mysqli_fetch_array($result)){
                                                               echo "<tr>";
@@ -91,9 +76,7 @@
                                                                echo "<td>" ;echo $row1["sem"] ;echo "</td>";
                                                                echo "<td>" ;echo $row1["rollno"] ;echo "</td>";
                                                                echo "<td>" ;echo $row1["status"]; echo "</td>";
-                                                               echo "<td>" ;?> <a href="approve.php? sid=<?php echo $row1["sid"];?>">Approve</a> <?php echo "</td>";
-                                                               echo "<td>" ;?> <a href="notapprove.php? sid=<?php echo $row1["sid"];?>">Not Approve</a> <?php echo "</td>";
-                                                               
+                                                                                                                             
                                                                echo"</tr>";
                                                           }
                                                           echo"</table>"; 

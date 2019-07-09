@@ -10,7 +10,7 @@
           while ($row= mysqli_fetch_array($result)){
                $booksname=$row["book_name"];
           }
-          mysqli_query($conn, "update  books set available=available+1 where name='$booksname' ");
+          mysqli_query($conn, "update  book_store set available=available+1 where book_name='$booksname' ");
         ?>
   
 <script type="text/javascript">

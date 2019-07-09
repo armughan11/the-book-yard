@@ -3,13 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/header.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/home.html</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/student/registration.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/footer.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/student/myIssuedBooks.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/index.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/student/studentpanel.php</file>
             <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/issue_book.php</file>
-            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/return_book.php</file>
-            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/dashboard.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/student/login.php</file>
             <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/displayStudentInfo.php</file>
-            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/return.php</file>
-            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/displaybook.php</file>
+            <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/student/header.php</file>
             <file>file:/C:/xampp/htdocs/ourLibraryFinal/dbSource/dashboard/addBooks.php</file>
         </group>
     </open-files>

@@ -114,13 +114,16 @@
                                         <tr>
                                              <td style="text-align: center"><label>Book to be Issued</label></td>
                                         <td>
-                                            <select name="bookname" class="form-control selectpicker">
+                                            <select name="book_name" class="form-control selectpicker">
                                                 <?php
-                                                     $result= mysqli_query($conn, "select name from books");
+                                                     $result= mysqli_query($conn, "select book_name from book_store");
+                                                      echo "<option>";
+                                                          echo "Select Books From Below";
+                                                          echo "</option>";
                                                       while($row= mysqli_fetch_array($result))
                                                       {
                                                           echo "<option>";
-                                                          echo $row["name"];
+                                                          echo $row["book_name"];
                                                           echo "</option>";
                                                       }
                                                 ?>
@@ -160,9 +163,9 @@
                                       mysqli_query($conn,"insert into issuestatus (	stu_rollno,stu_name,stu_dept,stu_sem,"
                                               . "stu_contact,stu_email,book_name,date_of_issue,date_of_return,stu_username)".
                                "values ('$_POST[stu_rollno]','$_POST[stu_name]','$_POST[stu_dept]'"
-                                              . ",'$_POST[stu_sem]','$_POST[stu_contact]','$_POST[stu_email]','$_POST[bookname]',"
+                                              . ",'$_POST[stu_sem]','$_POST[stu_contact]','$_POST[stu_email]','$_POST[book_name]',"
                                               . "'$_POST[date_of_issue]',' ','$_POST[stu_username]')");
-                                      mysqli_query($conn, "update  books set available=available-1 where name='$_POST[bookname]' ");
+                                      mysqli_query($conn, "update  book_store set available=available-1 where book_name='$_POST[book_name]' ");
                                   
                                ?>
                                 <script>
